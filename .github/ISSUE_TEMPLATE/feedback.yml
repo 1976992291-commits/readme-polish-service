@@ -1,0 +1,27 @@
+name: 模板问题反馈
+description: 报告模板中的错误、失效链接或不清楚之处
+title: "[Feedback]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: 请勿提交付款截图、交易单号、手机号、密码、Token、私钥或其他隐私信息。
+  - type: dropdown
+    id: product
+    attributes:
+      label: 对应模板包
+      options:
+        - README 快速上线包
+        - GitHub 项目维护包
+        - 独立项目上线检查包
+        - 全部合集
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题
+      description: 请说明文件路径、当前内容和建议修改。
+    validations:
+      required: true
+
